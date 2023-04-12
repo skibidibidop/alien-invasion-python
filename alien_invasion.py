@@ -10,11 +10,10 @@ class AlienInvasion:
     def __init__(self):
         """Initialize game and create game resources."""
         pygame.init()
-
         self.clock = pygame.time.Clock()
         self.settings = Settings()
-        self.screen = pygame.display.set_mode(self.settings.screen_width,
-                                              self.settings.screen_height)
+        self.screen = pygame.display.set_mode((self.settings.screen_width,
+                                              self.settings.screen_height))
 
         pygame.display.set_caption("Alien Invasion")
         self.bg_color = (self.settings.bg_color)
